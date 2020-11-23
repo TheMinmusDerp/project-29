@@ -27,7 +27,10 @@ function setup() {
     //circles.push(width/2);
 
     stand = new Ground(395,310,200,40);
-
+    /*Polygon thingo*/
+    polygon = Bodies.circle(50, 200, 20);
+    World.add(world, polygon);
+    slingShot = new SlingShot(polygon, {x:100, y:200});
     /*Level one*/
     block1 = new Block(300, 275, 30, 40); 
     block2 = new Block(330, 275, 30, 40);
@@ -48,10 +51,6 @@ function setup() {
     block15 = new Block(420, 195, 30, 40);
     /*Top*/
     block16 = new Block(390, 155, 30, 40);
-    /*Polygon thingo*/
-    polygon = Bodies.circle(50, 200, 20);
-    World.add(world, polygon);
-    slingShot = new SlingShot(polygon, {x:100, y:200});
 }
 
 function draw() {
