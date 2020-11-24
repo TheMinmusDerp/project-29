@@ -26,6 +26,7 @@ function setup() {
     //a=height;
     //circles.push(width/2);
 
+    /*Stand*/
     stand = new Ground(395,310,200,40);
     /*Polygon thingo*/
     polygon = Bodies.circle(50, 200, 20);
